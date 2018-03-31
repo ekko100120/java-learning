@@ -19,7 +19,9 @@ public class Boxing {
         System.out.println(c == d);
         System.out.println(e == f);
         System.out.println(c == (a + b));
+        System.out.println("------------------------------");
         System.out.println(c.equals(a + b));
+        System.out.println("------------------------------");
         System.out.println(g == (a + b));
         System.out.println(g.equals(a + b));
         System.out.println(new Integer(2) == new Integer(2));
@@ -34,7 +36,7 @@ false               自动装箱,未缓存
 true
 true                调用 equals(),比较的是值,而不是对象地址
 true
-false
+false               //x.equals(y)中默认先使用.instanceOf(x)，不同直接return false;
 false               比较的是对象地址
 
  */

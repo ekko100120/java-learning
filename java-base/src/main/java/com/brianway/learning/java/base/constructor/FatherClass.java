@@ -7,6 +7,7 @@ public class FatherClass {
     protected static int count = 10;
     private String name;
 
+    static String data = new String("静态变量初始化+++++++++++++++");
     static {
         System.out.println("父类的静态属性count初始化:" + count);
     }
