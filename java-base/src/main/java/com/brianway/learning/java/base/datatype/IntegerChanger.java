@@ -17,12 +17,18 @@ public class IntegerChanger {
 
     public static void main(String[] args) {
         Integer a = 1, b = 2;
+        int c=3,d=4;
         System.out.println("before swap a = " + a + ", b = " + b);
         swap(a, b);
         System.out.println("after swap a = " + a + ", b = " + b);
+        System.out.println("-----------------------------------------");
+        System.out.println("before swap c = " + c + ", d = " + d);
+        swap(c, d);
+        System.out.println("after swap c = " + c + ", d= " + d);
 
-        Integer c = 1;
-        System.out.println("(警告:Integer缓存被改了,代码里:Integer c = 1;) 实际c=" + c);
+
+        Integer f = 1;
+        System.out.println("(警告:Integer缓存被改了,代码里:Integer f = 1;) 实际f=" + f);
     }
 
     public static void swap(Integer i1, Integer i2) {
@@ -40,5 +46,10 @@ public class IntegerChanger {
             e.printStackTrace();
         }
 
+    }
+    public static void swap(int a,int b){
+        int temp=a;
+        a=b;
+        b=temp;
     }
 }
