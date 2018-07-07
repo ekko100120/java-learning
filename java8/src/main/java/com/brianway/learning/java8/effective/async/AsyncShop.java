@@ -19,7 +19,6 @@ public class AsyncShop {
         this.name = name;
         random = new Random(name.charAt(0) * name.charAt(1) * name.charAt(2));
     }
-
     public Future<Double> getPrice(String product) {
 /*      // 抛出 CompletableFuture 内的异常
         CompletableFuture<Double> futurePrice = new CompletableFuture<>();

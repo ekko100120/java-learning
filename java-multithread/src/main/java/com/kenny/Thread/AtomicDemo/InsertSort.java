@@ -24,10 +24,16 @@ public class InsertSort {
 
     public static void main(String [] args){
         int[] n= new int[]{6,1,7,4,10,2,4,9,3,8};
+        String str = "abebaf";
         InsertSort.sort(n);
+        char[] c = str.toCharArray();
         for (int i=0;i<n.length ;i++ ) {
             System.out.println(n[i]);
         }
+        for (int i=0;i<c.length ;i++ ) {
+            System.out.println(c[i]);
+        }
         System.out.println(Arrays.toString(n));
+        System.out.println(Math.max(10,11));
     }
 }

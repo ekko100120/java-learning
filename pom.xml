@@ -52,6 +52,8 @@
         <module>java-io</module>
         <module>java8</module>
         <module>java-jvm</module>
+        <module>algorithms</module>
+        <module>netty</module>
     </modules>
 
     <dependencyManagement>
